@@ -36,15 +36,3 @@ contract ico is Ownable(msg.sender){
 
 
 
-    function transferTokenCall(uint _amount) public {
-        require(_____________msg.sender] > 0, "must contribute");
-        ________________= tokenAddress.call(___________________________________________________________________, _____(), __________, _amount) );
-        require(success, "call failed");
-	_____________msg.sender] = 0;
-    }
-
-    function withdraw () ________ _______ ____Owner {
-        payable__________________________________________
-    }       
-}
-

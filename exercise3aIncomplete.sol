@@ -38,10 +38,10 @@ contract caller2{
     string public message;
     event Response(bool, bytes);
     fallback() external payable {
-        emit Response(true, "FB called");
+        emit Response(true, "FB caller 2");
     }
     receive() external payable {
-        emit Response(true, "RC called");
+        emit Response(true, "RC caller 2");
     }
     function callSM(address payable _addr, string memory _msg ) public payable{
         (bool success, bytes memory data) = _addr.delegatecall(abi.encodeWithSignature("setMessage(string)", _msg));
